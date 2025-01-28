@@ -44,10 +44,6 @@ This is a simple Task Manager application where users can add, edit, delete, and
 - **CSS**: For styling the task manager and buttons.
 - **JavaScript**: To handle adding, editing, deleting, and displaying tasks. Uses `localStorage` for persistence.
 
-## Demo
 
-To view the demo, simply open the `index.html` file in your browser.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
