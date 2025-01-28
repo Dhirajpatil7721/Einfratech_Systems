@@ -1,0 +1,231 @@
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#frame {
+    width: 50%;
+    background-color: bisque;
+}
+
+.adding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#addbtn {
+    width: 91%;
+    height: 4vh;
+    margin-top: 3px;
+}
+.ad{
+    background-color: rgba(9, 180, 17, 0.979);
+}
+.cle{
+    display: none;
+}
+.cleb{
+display: block;
+background-color: rgba(255, 0, 0, 0.774);
+}
+
+#input {
+    height: 3vh;
+    width: 90%;
+}
+
+
+
+li button{
+    
+}
+
+.ed{
+    background-color: rgba(9, 180, 17, 0.979);
+}
+.de{
+    background-color: rgba(255, 0, 0, 0.774);
+}
+ */
+
+
+/* General styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Main container */
+#frame {
+    width: 90%;
+    /* Default width for smaller screens */
+    max-width: 600px;
+    /* Limit width on larger screens */
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Task input section */
+.adding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Adds spacing between elements */
+}
+
+#addbtn {
+    width: 95%;
+    height: 40px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ad {
+    background-color: rgba(9, 180, 17, 0.979);
+    color: white;
+}
+
+.cle {
+    display: none;
+}
+
+.cleb {
+    display: block;
+    background-color: rgba(255, 0, 0, 0.774);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#input {
+    height: 35px;
+    width: 93%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+.editbtn{
+    margin-left: 65%;
+    background-color: rgba(9, 180, 17, 0.979);
+}
+.spann{
+    width: 75%;
+}
+
+/* Task list */
+#ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.tasking {
+    width: 96%;
+    margin-left: 14px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Edit button */
+.ed {
+    background-color: rgba(9, 180, 17, 0.979);
+    color: white;
+    margin-right: 5px;
+}
+
+/* Delete button */
+.de {
+    background-color: rgba(255, 0, 0, 0.774);
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #frame {
+        width: 80%;
+    }
+
+    #addbtn,
+    .cleb {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #input {
+        font-size: 14px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    li button {
+        width: 48%;
+        /* Split buttons evenly */
+    }
+}
+
+@media (max-width: 480px) {
+    #frame {
+        width: 95%;
+    }
+
+    #addbtn,
+    .cleb {
+        height: 35px;
+        font-size: 13px;
+    }
+
+    #input {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    li {
+        padding: 8px;
+    }
+
+    li button {
+        width: 100%;
+    }
+}    
